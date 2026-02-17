@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Investment | Compound Interest Calculator</title>
+    <link rel="icon" type="image/png" href="growth_chart.png">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <link rel ="stylesheet" href="css_calculator.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <img scr="growth_chart.png" alt="logo" width="50"
+            <h1>Investment calculator</h1>
+        </header>
+
+        <section id="Intro_text">
+            <p>
+            Investing is often seen as a game of luck, but it’s actually a game of time and consistency.
+             Whether you are saving for a comfortable retirement, a first home, or just building a "rainy day" fund, understanding how your money grows is the first step toward financial freedom.
+            This investment calculator is designed to strip away the guesswork. 
+            By projecting the impact of compound interest—what Albert Einstein famously called the "eighth wonder of the world"—you can visualize exactly how small, regular contributions today can transform into significant wealth tomorrow. 
+            </p>
+        </section>
+
+        <div class = >
+            <form id="investmentForm" method="post" action="">
+          
+                <label for="initialInvestment">Initial Investment</label>
+                <input type="text" id="initialInvestment" name="initialInvestment" placeholder="Enter amount for Inital Investment"/>
+                <br>
+                <label for="annualIntrestRate">Annual Interest Rate</label>
+                <input type="text" id="annualIntrestRate" name="annualIntrestRate" placeholder="Enter amount for annual growth"/>
+                <br>
+                <label for="yearOfRetirement">Year of Retirement</label>
+                <input type="text" id="yearOfRetirement" name="yearOfRetirement" placeholder="e.g., 2040"/>
+            <!-- add a min and maximum -->
+
+        <!-- <select name="yearOfRetirement">
+            <option value="2026">2026</option>
+            <option value="2027">New York</option>
+            <option value="Chicago" selected>Chicago</option>
+        </select> -->
+                <br>
+                <input type="submit" value="Submit"/>
+    
+            </form>
+
+        </section>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+    <script src="script.js"></script>
+</body>
+</html>
+<!-- 
+@script links -->
