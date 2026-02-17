@@ -8,8 +8,8 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
     <link rel ="stylesheet" href="css_calculator.css">
 </head>
-<body class="d-flex flex-column min-vh-100">
-    <nav class="navbar navbar-dar bg-primary shadow-sm mb-5">
+<body class="d-flex flex-column min-vh-100 bg-light-subtle">
+    <nav class="navbar navbar-dark bg-primary shadow-sm mb-5">
         <div class="container">
             <a class="navbar-brand d-flex align-items-center" href="#">
                <img src="growth_chart.png" alt="logo" width="40" height="40" class="d-inline-block align-text-top me-2"> 
@@ -19,23 +19,25 @@
 
     <main class="flex-grow-1">
     <div class="container">
-        <section id="Intro_text" class ="text-center mb-5">
+        <section id="intro_text" class ="text-center mb-5">
             <h1 class="display-5 fw-bold text-primary">Compound Interest Calculator</h1>
             <p class=" lead text-muted mx-auto" style="max-width: 700px;">
                 Investing isn't about luck—it’s about time and consistency. 
                 This tool strips away the guesswork by calculating the impact of compound interest, allowing you to see how small actions today build significant wealth tomorrow. 
             </p>
-            <p class="d-inline-block text-start text-muted">
-                To see your money’s potential, simply input these three numbers:
-                <ol class="d-inline-block text-start text-muted">
+
+            <div class="text-start d-inline-block text-muted mx-auto">
+                <p class=" text-muted mb-2">
+                    To see your money’s potential, simply input these three numbers: </p>
+                <ol class=" text-muted">
                     <li>Initial Investment: The initial "seed" money you are investing today</li>
                     <li>Interest Rate: The annual rate of return you expect to gain. </li>
-                    <li>Year of Retirment: How many years you will let the investment sit and grow</li>
+                    <li>Year of Retirement: How many years you will let the investment sit and grow</li>
                 </ol>
-            </p>
+            </div>
         </section>
 
-        <div class = "row justify-content-center">
+        <div class = "row justify-content-center" investmentForm>
             <div class = "col-md-6 border p-4 shadow-sm rounded bg-primary-subtle" >
                 <form id="investmentForm" method="post" action="">
                     <div class="row mb-3">
@@ -75,6 +77,3 @@
 </body>
 
 </html>
-<!-- hidden festure
-add css fetures
-go throught boot strap -->
